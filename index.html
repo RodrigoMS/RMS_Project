@@ -1,0 +1,92 @@
+<!-- Indica que o documento é um arquivo HTML. -->
+<!DOCTYPE html>
+
+<!-- Define a linguagem do conteúdo da página. -->
+<html lang="pt-br">
+
+<!-- Armazena informações sobre a página. -->
+<head>
+
+	<!-- Conjunto de caracteres que contém acentuação e ç. -->
+	<meta charset="utf-8">
+
+	<!-- Configuração da janela de visualização ( responsividade ). -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Importação do arquivo CSS. -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+	<!-- Título da aba do navegador -->
+	<title>Layout</title>
+</head>
+
+<!-- Conteúdo apresentado na tela. -->
+<body>
+
+	<!-- Agrupa os elementos que compõe o cabeçalho. -->
+	<header>
+		<img id="logo" src="./assets/images/logo.png" alt="Logo que contém as letras iniciais de meu nome R. M. S.">
+
+		<!-- UTF-8 Miscellaneous Symbols -->
+		<button id="openMenu">&#9776;</button>
+
+		<!-- Agrupa links de navegação no site. -->
+		<nav id="menu">
+
+			<button id="closeMenu">X</button>
+
+			<a target="_blanck" href="https://github.com/RodrigoMS">GitHub</a>
+
+			<a target="_blanck" href="https://www.linkedin.com/in/rodrigo-m-933617171/">Linkedin</a>
+
+			<a target="_blanck" href="https://www.youtube.com/channel/UCElJ2cDVfFbEjAWFfCOZqlg">YouTube</a>
+
+		</nav>
+
+	</header>
+
+	<!-- Agrupa o conteúdo principal da página ou aplicação. -->
+	<main>
+
+		<!-- Define uma seçaõ no documento -->
+		<section>
+			<!-- Define um agrupo par aformatação -->
+			<div class="name">
+				<!-- Título principal -->
+				<h1>Rodrigo Messias</h1>
+
+				<!-- Na hierarquia de títulos é o 2 (subtítulo). -->
+				<h2>Desernvolvedor Web</h2>
+			</div>
+
+			<!-- Parágrafo -->
+			<p>O mundo da tecnologia é incrível. As experiências que podemos fazer é ilimitada e instigantes. A programação de computadores são como asas que podem levar a diversos caminhos. É possível criar aplicações que automatizam suas tarefas no computador ou criar robôs que auxiliam na vida real. É um mundo onde a curiosidade é a maior aliada para alterar realidades.</p>
+
+			<!-- Quebra de linha -->
+			<br/>
+			
+			<!-- Parágrafo -->
+			<p>Vamos juntos nesta odisseia!</p>
+
+			<!-- Quebra de linha -->
+			<br/>
+
+			<!-- Formulário para envio de dados para o servidor definido 
+				   em action utilizando o método HTTP "POST". -->
+			<form action="#" method="POST">
+				<div>
+					<p>Deixe seu contato:</p>
+				</div>
+
+				<div>
+					<input type="email" placeholder="Seu melhor email :)" required />
+					<button>Enviar !</button>
+				</div>
+			</form>
+			
+		</section>
+	</main>
+
+	<!-- Importação do arquivo JavaScript. -->
+	<script src="assets/js/script.js"></script>
+</body>
