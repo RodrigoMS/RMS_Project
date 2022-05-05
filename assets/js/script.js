@@ -7,7 +7,7 @@ openMenu.addEventListener('click', () => {
 	menu.style.display = "flex"
 
 	/* Captura o tamanho do menu nav e aplica na posição. */
-	menu.style.right = parseInt(menu.offsetWidth * -1) + 'px'
+	menu.style.right = (menu.offsetWidth * -1) + 'px'
 
 	/* Após 10 milésimos de segundo, adiciona o atributo style, */
 	/* e adiciona as propriedades CSS.*/
@@ -35,7 +35,7 @@ closeMenu.addEventListener('click', () => {
 	menu.style.opacity = '0'
 
 	/* Captura o tamanho do menu nav e aplica na posição. */
-	menu.style.right = parseInt(menu.offsetWidth * -1) + 'px'
+	menu.style.right = (menu.offsetWidth * -1) + 'px'
 
 	/* Torna visível o botão que apresenta o menu nav. */
 	/* openMenu.style.display = 'block'*/
