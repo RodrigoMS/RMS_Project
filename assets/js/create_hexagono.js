@@ -1,7 +1,9 @@
 const light = document.querySelector(".light")
 const background = document.querySelector(".background-hexagono")
 
-background.addEventListener("mousemove", (e) => {
+const body = document.getElementsByTagName("body")[0]
+
+body.addEventListener("mousemove", (e) => {
   light.style.left = `${(e.clientX) - 150}px`
   light.style.top = `${(e.clientY) - 150 }px`
 })

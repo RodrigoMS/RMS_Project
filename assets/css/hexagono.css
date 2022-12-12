@@ -23,6 +23,8 @@
   -webkit-animation:animate-light 2s linear infinite;
   -moz-animation:animate-light 2s linear infinite;
   animation:animate-light 2s linear infinite;
+
+  pointer-events: none;
 }
 
 @-moz-keyframes animate-light {
