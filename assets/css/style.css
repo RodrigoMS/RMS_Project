@@ -41,9 +41,6 @@ body {
 	/* flex-shrink - Capacidade de redução do item.    */
 	/* flex-basis – Tamanho inicial do item.           */
 	flex: 1 1 100vw;
-
-	/* Margem de todos os lados. */
-	margin: 3px;
 }
 
 /* ---- Formatação comum entre os elementos. ---- */
@@ -62,11 +59,33 @@ header, nav, main, aside, footer {
 
 /* ---- Seletores para formatação individual. ---- */
 header {
-	height: 50px;
+	height: 100px;
+
+	background: #161616;
 }
 
-header #logo {
-	height: 100%;
+header .logo {
+	margin: 10px 2%;
+
+	background: linear-gradient(90deg, #ee7752, #e73c7e, #23a6d5, #23d5ab, #23a6d5, #e73c7e, #ee7752);
+	background-size: 800% 800%;
+	animation: gradient 15s linear infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+header .logo img {
+	height: 80px;
 }
 
 #openMenu, #closeMenu {

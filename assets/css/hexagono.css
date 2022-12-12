@@ -1,0 +1,85 @@
+.background-hexagono {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: #101010;
+  position: absolute;
+  z-index: -1000;
+}
+
+.light {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20em;
+  height: 20em;
+  filter: blur(40px);
+  border-radius: 10em;
+
+  background: linear-gradient(
+    90deg, #335bf4 0%, #2ae9c9 100%
+  );
+  
+  -webkit-animation:animate-light 2s linear infinite;
+  -moz-animation:animate-light 2s linear infinite;
+  animation:animate-light 2s linear infinite;
+}
+
+@-moz-keyframes animate-light {
+  0% { -moz-transform: rotate(0deg); } 
+  100% { -moz-transform: rotate(360deg); } 
+}
+@-webkit-keyframes animate-light {
+  0% { -webkit-transform: rotate(0deg); } 
+  100% { -webkit-transform: rotate(360deg); } 
+}
+@keyframes animate-light {
+  0% { -webkit-transform: rotate(0deg); 
+        transform:rotate(0deg); 
+  } 
+  100% { 
+      -webkit-transform: rotate(360deg); 
+      transform:rotate(360deg); 
+  } 
+}
+
+.container-hexagono {
+  display: flex;
+  position: absolute;
+}
+
+.hexagono {
+  width: 100px;
+  height: 60px;
+  background: black;
+  position: relative;
+  margin: 1px;
+}
+
+.hexagono:before {
+  content: "";
+  position: absolute;
+  top: -30px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 30px solid black;
+}
+.hexagono:after {
+  content: "";
+  position: absolute;
+  bottom: -30px;
+  top: 25px,                                  ;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 30px solid black;
+}
+
+.position-2 {
+  left: -51px;
+}

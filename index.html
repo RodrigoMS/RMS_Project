@@ -17,6 +17,7 @@
 
 	<!-- Importação do arquivo CSS. -->
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/hexagono.css">
 
 	<!-- Título da aba do navegador -->
 	<title>Rodrigo M. S.</title>
@@ -25,9 +26,16 @@
 <!-- Conteúdo apresentado na tela. -->
 <body>
 
+	<!-- Plano de fundo-->
+	<div class="background-hexagono">
+		<div class="light"></div>
+	</div>
+
 	<!-- Agrupa os elementos que compõe o cabeçalho. -->
 	<header>
-		<img id="logo" src="./assets/images/logo.png" alt="Logo que contém as letras iniciais de meu nome R. M. S.">
+		<figure class="logo">
+			<img src="./assets/images/logo.png" alt="Logo que contém as letras iniciais de meu nome R. M. S. - Rodrigo Messias da Silva">
+		</figure>
 
 		<!-- UTF-8 Miscellaneous Symbols -->
 		<button id="openMenu">&#9776;</button>
@@ -61,11 +69,15 @@
 				<h1>Rodrigo Messias</h1>
 
 				<!-- Na hierarquia de títulos é o 2 (subtítulo). -->
-				<h2>Desernvolvedor Web</h2>
+				<h2>Desenvolvedor Web</h2>
 			</div>
 
 			<!-- Parágrafo -->
-			<p>O mundo da tecnologia é incrível. As experiências que podemos fazer é ilimitada e instigantes. A programação de computadores são como asas que podem levar a diversos caminhos. É possível criar aplicações que automatizam suas tarefas no computador ou criar robôs que auxiliam na vida real. É um mundo onde a curiosidade é a maior aliada para alterar realidades.</p>
+			<p>A tecnologia é incrível. As experiências que podemos ter são ilimitadas e instigantes. 
+				A programação de computadores é como asas que podem seguir vários caminhos. É possível criar 
+				aplicativos que automatizam as tarefas do seu computador, mundos virtuais incríveis no desenvolvimento 
+				de jogos ou criar robôs que ajudam na vida real. 
+				É um mundo onde a curiosidade é a maior aliada na transformação da realidade.</p>
 
 			<!-- Quebra de linha -->
 			<br/>
@@ -73,32 +85,11 @@
 			<!-- Parágrafo -->
 			<p>Vamos juntos nesta odisseia!</p>
 
-			<!-- Quebra de linha -->
-			<br/>
-
-			<!-- Formulário para envio de dados para o servidor definido 
-				   em action utilizando o método HTTP "POST". -->
-			<form action="#" method="POST">
-				<!-- Define um agrupo para formatação -->
-				<div>
-					<p>Deixe seu contato:</p>
-				</div>
-
-				<!-- Define um agrupo para formatação -->
-				<div>
-					<!-- Campo de preenchimento do tipo e-mail. -->
-					<input type="email" placeholder="Seu melhor email :)" required />
-
-					<!-- Botão que envia o formulário -->
-					<button>Enviar !</button>
-				</div>
-
-			</form>
-
 		</section>
 
 	</main>
 
 	<!-- Importação do arquivo JavaScript. -->
 	<script src="assets/js/script.js"></script>
+	<script src="assets/js/create_hexagono.js"></script>
 </body>
